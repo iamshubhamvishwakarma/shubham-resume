@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <mat-card>
+    <mat-card-content>
+      <div class="card-item main-heading">
+        <div class="title">
+          <span>
+            <mat-icon>{{ educationsDetails.icon }}</mat-icon></span
+          >
+          <div class="heading">{{ educationsDetails.title }}</div>
+        </div>
+      </div>
+      <div class="content">
+        <shu-work-item
+          [education]="education"
+          *ngFor="let education of educationsDetails.data"
+        ></shu-work-item>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

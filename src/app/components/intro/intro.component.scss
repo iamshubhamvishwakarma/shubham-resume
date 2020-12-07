@@ -1,0 +1,43 @@
+.intro-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.user-image {
+  padding: 4px;
+  border: 6px solid #6670ae;
+  border-radius: 100px;
+  height: 150px;
+  width: 150px;
+
+  img {
+    border-radius: 100px;
+    height: 130px;
+    width: auto;
+  }
+}
+.titles {
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+  display: block;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.12);
+
+  letter-spacing: 1px;
+  .first-name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .last-name {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.job-title {
+  letter-spacing: 1px;
+  color: #828283;
+  font-size: 13px;
+  padding: 8px 4px;
+}

@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="item-header">
+    <span class="dot">
+      <mat-icon>fiber_manual_record</mat-icon>
+    </span>
+    <span class="item-title">{{ education.grade }}</span>
+    <mat-divider [vertical]="true"></mat-divider>
+    <span class="item-duration"
+      >{{ education["start-date"] | date: "MMM YYYY" }} -
+      {{ education["end-date"] | date: "MMM YYYY" }}</span
+    >
+  </div>
+  <div class="item-content">
+    <p [innerHTML]="education.description"></p>
+  </div>
+</div>
